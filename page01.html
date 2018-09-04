@@ -3,10 +3,48 @@
 <head>
 	<title>Page 1</title>
 	<script>
-	window.location.href = "https://gartevale.github.io/page02.html";
+		const currentTime = new Date().getTime();
+		const startTime = new Date(Date.UTC(2018, 8, 4, 14, 50, 0)).getTime();
+		const endTime = new Date(Date.UTC(2018, 8, 4, 14, 51, 0)).getTime();
+
+		if (currentTime > startTime && currentTime < endTime) {
+
+    		window.location.href = "https://gartevale.github.io/page02.html";
+
+		}
+
 	</script>
 </head>
 <body>
 Page 1
 </body>
 </html>
+
+
+ <!––
+ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/UTC
+var utcDate1 = new Date(Date.UTC(2018, 9, 4, 6, 4, 5));
+var utcDate2 = new Date(Date.UTC(0, 0, 0, 0, 0, 0));
+
+console.log(utcDate1.toUTCString());
+// expected output: Fri, 02 Feb 1996 03:04:05 GMT
+
+console.log(utcDate2.toUTCString());
+// expected output: Sun, 31 Dec 1899 00:00:00 GMT
+
+const time = new Date().getTime();
+undefined
+time;
+1536070481639
+Math.floor((new Date()).getTime() / 1000)
+1536070890
+var utcDate1 = new Date(Date.UTC(2018, 9, 4, 6, 4, 5)).getTime();
+undefined
+utcDate1
+1538633045000
+var utcDate2 = new Date(Date.UTC(2018, 9, 4, 6, 4, 6)).getTime();
+undefined
+utcDate2
+1538633046000 -->
+
+
